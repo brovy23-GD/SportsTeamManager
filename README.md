@@ -98,9 +98,10 @@ Update folder names if your solution is organized slightly differently.
 
 ```mermaid
 flowchart LR
-    UI[WPF UI] --> CB[Code-behind]
-    CB --> EF[EF Core DbContext]
-    EF --> DB[SQL Server LocalDB]
+    UI[WPF UI<br/>(MainWindow + controls)] --> B[Code-behind<br/>(event handlers)]
+    B --> C[EF Core<br/>(AppDbContext)]
+    C --> D[(SQL Server LocalDB<br/>SportsTeamDB)]
+
 ```
 
 - The **WPF UI** (XAML + code-behind) handles buttons, text boxes, DataGrid, ComboBox, and search input.  
