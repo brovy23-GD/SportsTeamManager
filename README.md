@@ -99,8 +99,9 @@ Update folder names if your solution is organized slightly differently.
 ```mermaid
 flowchart LR
     UI[WPF UI<br/>(MainWindow + controls)] --> B[Code-behind<br/>(event handlers)]
-    B -- C[EF Core<br/>(AppDbContext)]
-    C -- D[(SQL Server LocalDB<br/>SportsTeamDB)]
+    B --> C[EF Core<br/>(AppDbContext)]
+    C --> D[(SQL Server LocalDB<br/>SportsTeamDB)]
+
 
 
 ```
