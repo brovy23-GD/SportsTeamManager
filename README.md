@@ -395,7 +395,7 @@ On first run, the app seeds three **Chicago teams** into the LocalDB database if
 
 ---
 
-## 👨‍💻 Author
+## 👨💻 Author
 
 **Bobby Rovy**  
 U.S. Army Veteran • Software Engineer in Transition  
