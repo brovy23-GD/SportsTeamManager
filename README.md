@@ -98,15 +98,14 @@ Update folder names if your solution is organized slightly differently.
 
 ```mermaid
 flowchart LR
-    UI[WPF UI\n(MainWindow + controls)] --> B[Code-behind\n(event handlers)]
-    B --> C[EF Core\n(AppDbContext)]
-    C --> D[(SQL Server LocalDB\nSportsTeamDB)]
+    UI[WPF UI] --> CB[Code-behind]
+    CB --> EF[EF Core DbContext]
+    EF --> DB[SQL Server LocalDB]
 ```
 
 - The **WPF UI** (XAML + code-behind) handles buttons, text boxes, DataGrid, ComboBox, and search input.  
 - The **code-behind** calls **AppDbContext** to query and save `SportsTeam` records.  
 - **EF Core** maps the `SportsTeam` model to the **SportsTeamDB** LocalDB database using migrations.
-
 ---
 
 ## 🗃️ Database Model Example
