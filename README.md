@@ -97,10 +97,14 @@ Update folder names if your solution is organized slightly differently.
 ## 🧩 Architecture Overview
 
 ```mermaid
+## 🧩 Architecture Overview
+
+```mermaid
 flowchart LR
-    UI[WPF UI<br/>(MainWindow + controls)] --> B[Code-behind<br/>(event handlers)]
-    B --> C[EF Core<br/>(AppDbContext)]
-    C --> D[(SQL Server LocalDB<br/>SportsTeamDB)]
+    UI["WPF UI<br/>(MainWindow + controls)"] --> B["Code-behind<br/>(event handlers)"]
+    B --> C["EF Core<br/>(AppDbContext)"]
+    C --> D["SQL Server LocalDB<br/>SportsTeamDB"]
+
 
 
 
